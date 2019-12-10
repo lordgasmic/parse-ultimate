@@ -1,0 +1,16 @@
+-- insert into step values(id,sequence,text);
+insert into step values(0,0,"Add thin layer of meat sauce");
+insert into step values(0,1,"Add a layer noodles");
+insert into step values(0,2,"Add ricotta mixture");
+insert into step values(0,3,"Add parm");
+insert into step values(0,4,"Repeat");
+insert into step values(1,0,"Add ingredients to sauce pot");
+insert into step values(1,1,"BTB, RTS 30 mins");
+insert into step values(2,0,"Add all ingredients for the sacue to a bowl and mix");
+insert into step values(2,1,"Add chicken and let merinade 30 - 60 min");
+insert into step values(2,2,"Oil large skillet and begin to heat");
+insert into step values(2,3,"When oil is warm, remove chicken from merinade and add to pan.  Save the remaning merinade and set aside");
+insert into step values(2,4,"Cook chicken, about 8 minutes");
+insert into step values(2,5,"Add merrinade mixture, BTB");
+insert into step values(2,6,"Add corn starch and let thicken");
+insert into step values(3,0,"Mix ingredients together, breaking up the brown sugar so there are no clumps");

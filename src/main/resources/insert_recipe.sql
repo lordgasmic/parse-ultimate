@@ -1,0 +1,11 @@
+-- insert into recipe values(,"");
+insert into recipe values(0,"Lasagna");
+insert into recipe values(1,"NC BBQ Sauce");
+insert into recipe values(2,"Lordgasmic Chicken");
+insert into recipe values(3,"BBQ Rub");
+insert into recipe values(4,"Chicken Curry");
+insert into recipe values(5,"Bread");
+insert into recipe values(6,"Potato Dressing");
+insert into recipe values(7,"Meat Merinade");
+insert into recipe values(8,"Baharat");
+insert into recipe values(9,"Curry Powder");
