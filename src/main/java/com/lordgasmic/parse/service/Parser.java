@@ -15,12 +15,4 @@ public abstract class Parser<T> {
     }
 
     protected abstract T offLoad(Document doc);
-
-    protected abstract String getTitle();
-
-    protected abstract String getIngredientsList();
-
-    protected abstract String getDirectionsList();
-
-    protected abstract String getDirectionItem();
 }
