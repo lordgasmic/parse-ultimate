@@ -1,25 +1,21 @@
-package com.lordgasmic.recipe.parse.service;
-
-import java.io.IOException;
+package com.lordgasmic.parse.recipe.service;
 
 import org.apache.commons.lang3.math.NumberUtils;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.lordgasmic.recipe.parse.casc.Dictionary;
-import com.lordgasmic.recipe.parse.model.Ingredient;
-import com.lordgasmic.recipe.parse.model.Recipe;
-import com.lordgasmic.recipe.parse.model.Step;
+import com.lordgasmic.parse.recipe.casc.Dictionary;
+import com.lordgasmic.parse.recipe.model.Ingredient;
+import com.lordgasmic.parse.recipe.model.Recipe;
+import com.lordgasmic.parse.recipe.model.Step;
+import com.lordgasmic.parse.service.Parser;
 
-public abstract class Parser {
+public abstract class RecipeParser extends Parser<Recipe> {
 
-    public Recipe parse(String url) throws IOException {
+    @Override
+    protected Recipe offLoad(Document doc) {
         Recipe r = new Recipe();
-
-        Document doc = Jsoup.connect(url)
-                            .get();
 
         Element title = doc.getElementById(getTitle());
         r.setName(title.text());

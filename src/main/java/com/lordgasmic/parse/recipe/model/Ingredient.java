@@ -1,6 +1,6 @@
-package com.lordgasmic.recipe.parse.model;
+package com.lordgasmic.parse.recipe.model;
 
-import com.lordgasmic.recipe.parse.casc.UnitOfMeasure;
+import com.lordgasmic.parse.recipe.casc.UnitOfMeasure;
 
 import lombok.Data;
 

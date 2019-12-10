@@ -1,6 +1,6 @@
-package com.lordgasmic.recipe.parse.service;
+package com.lordgasmic.parse.recipe.service;
 
-public class AllRecipesParser extends Parser {
+public class AllRecipesParser extends RecipeParser {
 
     @Override
     public String getTitle() {
