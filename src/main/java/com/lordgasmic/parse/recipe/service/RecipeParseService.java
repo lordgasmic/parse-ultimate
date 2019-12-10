@@ -10,7 +10,7 @@ import com.lordgasmic.parse.recipe.model.Recipe;
 public class RecipeParseService {
 
     public Recipe get(String url) throws IOException {
-        Parser parser = ParserFactory.allRecipesParser();
+        RecipeParser parser = ParserFactory.allRecipesParser();
         return parser.parse(url);
     }
 

@@ -2,7 +2,7 @@ package com.lordgasmic.parse.recipe.service;
 
 public class ParserFactory {
 
-    public static Parser allRecipesParser() {
+    public static RecipeParser allRecipesParser() {
         return new AllRecipesParser();
     }
 }
