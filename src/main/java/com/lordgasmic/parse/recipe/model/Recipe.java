@@ -1,4 +1,4 @@
-package com.lordgasmic.recipe.parse.model;
+package com.lordgasmic.parse.recipe.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.lordgasmic.recipe.parse.casc;
+package com.lordgasmic.parse.recipe.casc;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.lordgasmic.recipe.parse.service;
+package com.lordgasmic.parse.recipe.service;
 
 public class AllRecipesParser extends Parser {
 

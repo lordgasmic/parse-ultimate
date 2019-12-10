@@ -1,4 +1,4 @@
-package com.lordgasmic.recipe.parse.controller;
+package com.lordgasmic.parse.recipe.controller;
 
 import java.io.IOException;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lordgasmic.recipe.parse.model.Recipe;
-import com.lordgasmic.recipe.parse.service.RecipeParseService;
+import com.lordgasmic.parse.recipe.model.Recipe;
+import com.lordgasmic.parse.recipe.service.RecipeParseService;
 
 @RestController
 public class RecipeParseController {

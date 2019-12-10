@@ -1,4 +1,4 @@
-package com.lordgasmic.recipe.parse.service;
+package com.lordgasmic.parse.recipe.service;
 
 import java.io.IOException;
 
@@ -8,10 +8,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.lordgasmic.recipe.parse.casc.Dictionary;
-import com.lordgasmic.recipe.parse.model.Ingredient;
-import com.lordgasmic.recipe.parse.model.Recipe;
-import com.lordgasmic.recipe.parse.model.Step;
+import com.lordgasmic.parse.recipe.casc.Dictionary;
+import com.lordgasmic.parse.recipe.model.Ingredient;
+import com.lordgasmic.parse.recipe.model.Recipe;
+import com.lordgasmic.parse.recipe.model.Step;
 
 public abstract class Parser {
 
