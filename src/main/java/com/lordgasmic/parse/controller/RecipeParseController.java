@@ -1,4 +1,4 @@
-package com.lordgasmic.parse.recipe.controller;
+package com.lordgasmic.parse.controller;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lordgasmic.parse.recipe.model.Recipe;
-import com.lordgasmic.parse.recipe.service.RecipeParseService;
+import com.lordgasmic.parse.service.RecipeParseService;
 
 @RestController
 public class RecipeParseController {
@@ -16,7 +16,7 @@ public class RecipeParseController {
     @Autowired
     private RecipeParseService service;
 
-    @PostMapping("/parse")
+    @PostMapping("/recipe/parse")
     public Recipe getRecipe(@RequestParam String url) throws IOException {
         Recipe recipe = service.get(url);
         return recipe;

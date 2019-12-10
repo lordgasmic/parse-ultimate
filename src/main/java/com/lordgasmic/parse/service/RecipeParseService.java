@@ -1,4 +1,4 @@
-package com.lordgasmic.parse.recipe.service;
+package com.lordgasmic.parse.service;
 
 import java.io.IOException;
 

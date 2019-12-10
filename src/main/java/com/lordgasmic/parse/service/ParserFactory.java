@@ -1,4 +1,4 @@
-package com.lordgasmic.parse.recipe.service;
+package com.lordgasmic.parse.service;
 
 public class ParserFactory {
 
