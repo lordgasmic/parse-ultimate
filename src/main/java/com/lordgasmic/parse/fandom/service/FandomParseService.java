@@ -12,7 +12,7 @@ import com.lordgasmic.parse.service.ParserFactory;
 public class FandomParseService {
 
     public Comic get(String url) throws IOException {
-        Parser<Comic> parser = ParserFactory.fandomParser();
+        Parser<Comic> parser = ParserFactory.fandomSearchParser();
         return parser.parse(url);
     }
 }

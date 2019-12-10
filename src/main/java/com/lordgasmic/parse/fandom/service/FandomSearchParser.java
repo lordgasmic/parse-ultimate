@@ -1,18 +1,19 @@
 package com.lordgasmic.parse.fandom.service;
 
+import java.io.IOException;
+
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.lordgasmic.parse.fandom.model.Comic;
 import com.lordgasmic.parse.service.Parser;
+import com.lordgasmic.parse.service.ParserFactory;
 
 public class FandomSearchParser extends Parser<Comic> {
 
     @Override
     protected Comic offLoad(Document doc) {
-        Comic comic = new Comic();
-
         Elements resultsWrapper = doc.select("li.result");
         Element result = resultsWrapper.get(0);
 
@@ -25,8 +26,15 @@ public class FandomSearchParser extends Parser<Comic> {
                               .get(0)
                               .attr("href");
 
+        Parser<Comic> parser = ParserFactory.fandomPageParser();
+        Comic comic;
+        try {
+            comic = parser.parse(articleUrl);
+        } catch (IOException e) {
+            comic = new Comic();
+        }
+
         comic.setTitle(title);
-        comic.setImageUrl(articleUrl);
 
         return comic;
     }
