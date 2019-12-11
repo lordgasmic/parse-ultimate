@@ -10,4 +10,11 @@ public class Comic {
     private int issue;
     private int volume;
     private boolean variant;
+
+    public void merge(Comic other) {
+        this.imageUrl = other.imageUrl;
+        this.issue = other.issue;
+        this.volume = other.volume;
+        this.variant = other.variant;
+    }
 }
