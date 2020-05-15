@@ -3,6 +3,8 @@ package com.lordgasmic.parse.fandom.controller;
 import java.io.IOException;
 import java.time.Instant;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,5 +33,12 @@ public class FandomParseController {
     @GetMapping("/comic/derp")
     public String getDerp(){
         return "derp";
+    }
+
+    @GetMapping("/comic/derp")
+    public Map<String, String> getDerpQuery(@RequestParam String name){
+        Map<String, String> map = new HashMap<>();
+        map.put("name", name);
+        return map;
     }
 }
