@@ -35,7 +35,7 @@ public class FandomParseController {
         return "derp";
     }
 
-    @GetMapping("/comic/derp")
+    @GetMapping("/comic/search")
     public Map<String, String> getDerpQuery(@RequestParam String name){
         Map<String, String> map = new HashMap<>();
         map.put("name", name);
