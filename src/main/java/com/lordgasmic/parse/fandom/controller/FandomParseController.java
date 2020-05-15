@@ -30,12 +30,12 @@ public class FandomParseController {
         return comic;
     }
 
-    @GetMapping("/comic/derp")
+    @PostMapping("/comic/derp")
     public String getDerp(){
         return "derp";
     }
 
-    @GetMapping("/comic/search")
+    @PostMapping("/comic/search")
     public Map<String, String> getDerpQuery(@RequestParam String name){
         Map<String, String> map = new HashMap<>();
         map.put("name", name);
