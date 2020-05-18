@@ -27,16 +27,4 @@ public class FandomParseController {
         Comic comic = service.get(barcode.getUpc(), barcode.getSupl());
         return comic;
     }
-
-    @PostMapping("/comic/derp")
-    public String getDerp(){
-        return "derp";
-    }
-
-    @PostMapping("/comic/search")
-    public Map<String, String> getDerpQuery(@RequestParam String name){
-        Map<String, String> map = new HashMap<>();
-        map.put("name", name);
-        return map;
-    }
 }
